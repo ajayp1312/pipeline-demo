@@ -1,0 +1,19 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- script: echo "Hello Ajay"
+  displayName: "Greeting"
+
+- script: |
+    echo "Listing Files"
+    pwd
+    ls -la
+  displayName: "List Files"
+
+- script: echo "Pipeline Completed"
+  displayName: "Success"
